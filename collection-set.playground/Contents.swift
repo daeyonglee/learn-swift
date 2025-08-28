@@ -28,3 +28,20 @@ if let indexToRemove = myFriends.firstIndex(of: "b") {
 if !myFriends.contains("b") {
     print("b가 없다.")
 }
+
+
+let totalFriends = ["철수", "영희", "수잔", "제임스"]
+let foreignFriends = ["제임스", "수잔"]
+let koreanFriends = ["철수", "영희", "상철"]
+
+let totalFriendsSet: Set<String> = Set(totalFriends)
+let foreignFriendsSet: Set<String> = Set(foreignFriends)
+let koreanFriendsSet: Set<String> = Set(koreanFriends)
+
+// 내가 속해 있는지 체크
+let isForeignFriendsIsInTotalFriends: Bool = foreignFriendsSet.isSubset(of: totalFriendsSet)
+let isTotalFriendsHasForeignFriends: Bool = totalFriendsSet.isSuperset(of: foreignFriendsSet)
+let isTotalFriendsHasKoreanFriends: Bool = totalFriendsSet.isSuperset(of: koreanFriendsSet)
+let isKoreanFriendsIsInTotalFriends: Bool = koreanFriendsSet.isSubset(of: totalFriendsSet)
+
+
