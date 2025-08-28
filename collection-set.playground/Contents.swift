@@ -45,3 +45,6 @@ let isTotalFriendsHasKoreanFriends: Bool = totalFriendsSet.isSuperset(of: korean
 let isKoreanFriendsIsInTotalFriends: Bool = koreanFriendsSet.isSubset(of: totalFriendsSet)
 
 
+let unionSet = foreignFriendsSet.union(koreanFriendsSet)
+let intersectionSet = totalFriendsSet.intersection(foreignFriendsSet)
+let symmetricDiffrenceSet = totalFriendsSet.symmetricDifference(foreignFriendsSet)
