@@ -38,3 +38,15 @@ print(result.min)
 print(result.max)
 print(result.0)
 print(result.1)
+
+
+let somePoint = (x: 1.0, y: 2.0)
+
+switch somePoint {
+    case (x:0, y:0):
+        print("\(somePoint)는 중심에 있다.")
+    case (_, 0):
+        print("\(somePoint)는 x축에 있다.")
+    default:
+        print("\(somePoint)는 상자 밖에 있다.")
+}
